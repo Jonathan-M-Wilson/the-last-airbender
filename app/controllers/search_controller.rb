@@ -5,7 +5,11 @@ class SearchController < ApplicationController
     if nation = 'fire_nation'
       nation = 'Fire Nation'
     end
-    @members_of_nation = get_json("/api/v1/characters?affiliation=#{nation}")
+    members_of_nation = get_json("/api/v1/characters?affiliation=#{nation}")
+
+    @members = members_of_nation.map do |data|
+      Member.new(data)
+    end 
   end
 
   private

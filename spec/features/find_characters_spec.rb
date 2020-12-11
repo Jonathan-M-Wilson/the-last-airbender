@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe 'As a user,', type: :feature do
-  describe 'When I select "Fire Nation" from the form and click on "Search For Members"' do
+  describe 'When I select "Fire Nation" from the form and click on "Search For Members"', :vcr do
     before :each do
       visit root_path
       select 'Fire Nation', from: :nation
