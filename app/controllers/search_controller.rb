@@ -1,25 +1,5 @@
 class SearchController < ApplicationController
   def index
-     nation = params[:nation]
-
-    if nation = 'fire_nation'
-      nation = 'Fire Nation'
-    end
-    members_of_nation = get_json("/api/v1/characters?affiliation=#{nation}")
-
-    @members = members_of_nation.map do |data|
-      Member.new(data)
-    end 
-  end
-
-  private
-
-  def conn
-    Faraday.new(url: 'https://last-airbender-api.herokuapp.com/')
-  end
-
-  def get_json(url)
-    response = conn.get(url)
-    JSON.parse(response.body, symbolize_names: true)
+    @members = SearchFacade.find_members(params[:nation])
   end
 end

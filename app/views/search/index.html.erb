@@ -3,10 +3,12 @@
 <% @members.each do |member| %>
   <section class='members_information'>
     <ul>
-      <li><h2 class='name'>Name: <%= member.name %></h2></li>
-      <li><h2 class='photo'>Photo: <img src= <%= member.photo %></h2></li>
-      <li><h2 class='allies'>Allies: <%= member.allies %></h2></li>
-      <li><h2 class='affiliation'>Affiliation: <%= member.affiliation %></h2></li><br>
+      <h3 class='name'>Name: <%= member.name %></h3>
+      <div id="photo">
+        <li> <h4 class='photo'>Photo: <img src= <%= member.photo %></h4></li>
+      </div>
+      <li> <h4 class='allies'>Allies: <%= member.allies %></h4></li>
+      <li> <h4 class='affiliation'>Affiliation: <%= member.affiliation %></h4></li><br>
   </ul>
   </section>
 <% end %>

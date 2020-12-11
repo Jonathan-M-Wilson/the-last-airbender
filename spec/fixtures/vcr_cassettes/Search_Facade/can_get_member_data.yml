@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://last-airbender-api.herokuapp.com/api/v1/characters?affiliation=Azula
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1694'
+      Etag:
+      - W/"69e-7iGuYZ79UfEIpyNWP8gB4M6yC8Y"
+      Date:
+      - Fri, 11 Dec 2020 17:53:47 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"_id":"5cf5679a915ecad153ab68da","allies":["Ozai","Zuko "],"enemies":["Iroh","Zuko","Kuei","Long
+        Feng","Mai","Ty Lee","Ursa "],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/1/12/Azula.png/revision/latest?cb=20140905084941","name":"Azula","affiliation":"
+        Azula''s team (formerly) Dai Li (formerly) Fire Nation Fire Nation Royal Family
+        Fire Warriors Royal Fire Academy for Girls (formerly)"},{"_id":"5cf5679a915ecad153ab68e4","allies":["Azula"],"enemies":["Azula"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/4/48/Banished_servant.png/revision/latest?cb=20120222022610","name":"Banished
+        servant","affiliation":" Fire Nation Royal Family (formerly) Azula''s servants
+        (formerly)"},{"_id":"5cf5679a915ecad153ab695c","allies":["Dai Li",""],"enemies":["Earth
+        Kingdom",""],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/6/69/Head_of_the_Dai_Li.png/revision/latest?cb=20101208144254","name":"Head
+        of the Dai Li","affiliation":" Azula (formerly) Dai Li Long Feng (formerly)"},{"_id":"5cf5679a915ecad153ab69c7","allies":["Ukano"],"enemies":["Azula","Ukano","Team
+        Avatar "],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/4/40/Mai.png/revision/latest?cb=20090406114652","name":"Mai","affiliation":"
+        Azula''s team (formerly) Fire Nation Royal Fire Academy for Girls (formerly)"},{"_id":"5cf5679a915ecad153ab6a7a","allies":["Mai"],"enemies":["Azula","Team
+        Avatar "],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/6/6d/Ty_Lee.png/revision/latest?cb=20140905083814","name":"Ty
+        Lee","affiliation":" Azula''s team (formerly) Fire Nation Fire Nation circus
+        (formerly) Kyoshi Warriors Royal Fire Academy for Girls (formerly) Ty sisters"}]'
+  recorded_at: Fri, 11 Dec 2020 17:53:47 GMT
+recorded_with: VCR 6.0.0
