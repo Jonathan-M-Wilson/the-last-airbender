@@ -33,7 +33,7 @@ http_interactions:
       Etag:
       - W/"14d5-WTRRSJNnTC1GW+LUuYG/NeY4TjY"
       Date:
-      - Fri, 11 Dec 2020 17:13:48 GMT
+      - Fri, 11 Dec 2020 17:38:28 GMT
       Via:
       - 1.1 vegur
     body:
@@ -71,5 +71,5 @@ http_interactions:
         Navy officer","affiliation":"Fire Nation Navy"},{"_id":"5cf5679a915ecad153ab6925","allies":["Fire
         Nation bar patron"],"enemies":["Katara"],"photoUrl":"https://vignette.wikia.nocookie.net/avatar/images/4/40/Fire_Nation_bar_patron%27s_friend.png/revision/latest?cb=20130308170725","name":"Fire
         Nation bar patron''s friend","affiliation":"Fire Nation"}]'
-  recorded_at: Fri, 11 Dec 2020 17:13:48 GMT
+  recorded_at: Fri, 11 Dec 2020 17:38:28 GMT
 recorded_with: VCR 6.0.0
