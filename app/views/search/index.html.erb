@@ -1,12 +1,12 @@
-<h2>Total Results: <%=@members_of_nation.size %></h2>
+<h2>Total Results: <%=@members.size %></h2>
 
-<% @members_of_nation.each do |member| %>
+<% @members.each do |member| %>
   <section class='members_information'>
     <ul>
-      <li><h2 class='name'>Name: <%= member[:name] %></h2></li>
-      <li><h2 class='photo'>Photo: <img src= <%= member[:photoUrl] %></h2></li>
-      <li><h2 class='allies'>Allies: <%= member[:allies] %></h2></li>
-      <li><h2 class='affiliation'>Affiliation: <%= member[:affiliation] %></h2></li><br>
+      <li><h2 class='name'>Name: <%= member.name %></h2></li>
+      <li><h2 class='photo'>Photo: <img src= <%= member.photo %></h2></li>
+      <li><h2 class='allies'>Allies: <%= member.allies %></h2></li>
+      <li><h2 class='affiliation'>Affiliation: <%= member.affiliation %></h2></li><br>
   </ul>
   </section>
 <% end %>
